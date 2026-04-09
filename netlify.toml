@@ -1,0 +1,11 @@
+[build]
+  base = "frontend"
+  command = "npm install && npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NEXT_PUBLIC_API_URL = "https://roscoe-mc-backend.onrender.com"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
